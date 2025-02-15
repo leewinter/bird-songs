@@ -19,8 +19,8 @@ function GenericPlayer({ audioUrl, imageSrc }) {
   return (
     <img
       src={imageSrc}
-      className={`logo react vite ${isPlaying ? "playing" : ""}`}
-      alt="React logo"
+      className={`bird react vite ${isPlaying ? "playing" : ""}`}
+      alt="audio bird"
       onClick={handleClick}
     />
   );
