@@ -54,6 +54,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+button.start-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 80vh;
+  font-size: 2rem;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

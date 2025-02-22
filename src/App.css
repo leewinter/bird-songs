@@ -7,8 +7,6 @@
 
 /* Make the bird images responsive */
 .bird {
-  height: 15vw; /* Adjust size based on viewport width */
-  max-height: 300px; /* Limit max size */
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -19,21 +17,6 @@
 }
 .bird.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .bird {
-    height: 15vw; /* Increase size for smaller screens */
-    max-height: 80px;
-  }
-}
-
-@media (max-width: 480px) {
-  .bird {
-    height: 20vw; /* Make images larger on small screens */
-    max-height: 60px;
-  }
 }
 
 /* Rotation animation */
@@ -60,29 +43,10 @@
   color: #888;
 }
 
-.bird-list {
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next row */
-  justify-content: center; /* Centers items horizontally */
-  gap: 1rem; /* Adds spacing between items */
-}
-
-.bird-item {
-  flex: 1 1 calc(33.33% - 1rem); /* Each bird takes one-third width with spacing */
-  max-width: 200px; /* Limit max width */
-  min-width: 150px; /* Prevent items from getting too small */
-  text-align: center;
-}
-
-/* Adjust layout for smaller screens */
-@media (max-width: 768px) {
-  .bird-item {
-    flex: 1 1 calc(50% - 1rem); /* Two items per row on tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .bird-item {
-    flex: 1 1 calc(100% - 1rem); /* One item per row on small screens */
-  }
+img.bird {
+  display: block; /* Removes extra space below inline images */
+  max-width: calc(100vw - 20px); /* 100% of viewport width minus margin */
+  max-height: calc(100vh - 20px); /* 100% of viewport height minus margin */
+  margin: 10px; /* Adds slight margin around the image */
+  object-fit: contain; /* Ensures the whole image fits without cropping */
 }
