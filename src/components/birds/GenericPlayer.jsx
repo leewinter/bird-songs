@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 
 import PropTypes from "prop-types";
 
-function GenericPlayer({ audioUrl, imageSrc }) {
+function GenericPlayer({ audioUrl, imageSrc, defaultState = false }) {
   const audioRef = useRef(new Audio(audioUrl));
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(defaultState);
 
   const handleClick = () => {
     if (isPlaying) {
@@ -28,6 +28,7 @@ function GenericPlayer({ audioUrl, imageSrc }) {
 GenericPlayer.propTypes = {
   audioUrl: PropTypes.string,
   imageSrc: PropTypes.string.isRequired,
+  defaultState: PropTypes.bool,
 };
 
 export default GenericPlayer;
