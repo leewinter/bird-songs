@@ -95,8 +95,8 @@ function App() {
             indexRef.current = 0; // Reset the index
           }}
         >
-          <span>British bird songs</span>
-          <span>  Click to start</span>
+          <span>British bird songs<br />
+            Click to start</span>
         </button>
       )}
       {startSpeaking &&
