@@ -3,12 +3,12 @@ import { useEffect, useRef, useState } from "react";
 
 import "./App.css";
 
-import robin from "./assets/robin.jpg";
-import blackbird from "./assets/blackbird.jpg";
-import chaffinch from "./assets/chaffinch.jpg";
+import robin from "./assets/Robin.jpg";
+import blackbird from "./assets/Blackbird.jpg";
+import chaffinch from "./assets/Chaffinch.jpg";
 import woodpigeon from "./assets/Wood-Pigeon.jpg";
-import songThrush from "./assets/song-thrush.jpg";
-import wren from "./assets/wren.jpg";
+import songThrush from "./assets/Song-Thrush.jpg";
+import wren from "./assets/Wren.jpg";
 import robinsong from "./assets/Robin.mp3";
 import blackbirdsong from "./assets/Blackbird.mp3";
 import chaffinchsong from "./assets/Chaffinch.mp3";
