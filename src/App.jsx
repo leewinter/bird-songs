@@ -3,43 +3,49 @@ import { useEffect, useRef, useState } from "react";
 
 import "./App.css";
 
-import robin from "./assets/robin.jpg";
-import blackbird from "./assets/blackbird.png";
-import mistleThrush from "./assets/mistle-thrush.png";
-import nightingale from "./assets/nightingale.png";
-import songThrush from "./assets/song-thrush.png";
-import northernWheatear from "./assets/northern-wheatear.png";
+import robin from "./assets/Robin.jpg";
+import blackbird from "./assets/Blackbird.jpg";
+import chaffinch from "./assets/Chaffinch.jpg";
+import woodpigeon from "./assets/Wood-Pigeon.jpg";
+import songThrush from "./assets/Song-Thrush.jpg";
+import wren from "./assets/Wren.jpg";
+import robinsong from "./assets/Robin.mp3";
+import blackbirdsong from "./assets/Blackbird.mp3";
+import chaffinchsong from "./assets/Chaffinch.mp3";
+import woodpigeonsong from "./assets/Wood_Pigeon.mp3";
+import songthrushsong from "./assets/Song_Thrush.mp3";
+import wrensong from "./assets/Wren.mp3";
 
 const birdies = [
   {
     imageSrc: robin,
-    audioUrl: "https://www.british-birdsongs.uk/sounds/644.mp3",
+    audioUrl: robinsong,
     preview: "Robin",
   },
   {
     imageSrc: blackbird,
-    audioUrl: "https://www.british-birdsongs.uk/sounds/653.mp3",
+    audioUrl: blackbirdsong,
     preview: "Blackbird",
   },
   {
-    imageSrc: mistleThrush,
-    audioUrl: "https://www.british-birdsongs.uk/sounds/656.mp3",
-    preview: "Mistle Thrush",
+    imageSrc: chaffinch,
+    audioUrl: chaffinchsong,
+    preview: "Chaffinch",
   },
   {
-    imageSrc: nightingale,
-    audioUrl: "https://www.british-birdsongs.uk/sounds/1464.mp3",
-    preview: "Nightingale",
+    imageSrc: woodpigeon,
+    audioUrl: woodpigeonsong,
+    preview: "Wood Pigeon",
   },
   {
     imageSrc: songThrush,
-    audioUrl: "https://www.british-birdsongs.uk/sounds/654.mp3",
+    audioUrl: songthrushsong,
     preview: "Song Thrush",
   },
   {
-    imageSrc: northernWheatear,
-    audioUrl: "https://www.british-birdsongs.uk/sounds/647.mp3",
-    preview: "Northern Wheatear",
+    imageSrc: wren,
+    audioUrl: wrensong,
+    preview: "Wren",
   },
 ];
 
@@ -95,7 +101,8 @@ function App() {
             indexRef.current = 0; // Reset the index
           }}
         >
-          <span>Show me the birds</span>
+          <span>British bird songs<br />
+            Click to start</span>
         </button>
       )}
       {startSpeaking &&
