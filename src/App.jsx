@@ -12,8 +12,8 @@ import wren from "./assets/Wren.jpg";
 import robinsong from "./assets/Robin.mp3";
 import blackbirdsong from "./assets/Blackbird.mp3";
 import chaffinchsong from "./assets/Chaffinch.mp3";
-import woodpigeonsong from "./assets/Wood_pigeon.mp3";
-import songthrushsong from "./assets/Song_thrush.mp3";
+import woodpigeonsong from "./assets/Wood_Pigeon.mp3";
+import songthrushsong from "./assets/Song_Thrush.mp3";
 import wrensong from "./assets/Wren.mp3";
 
 const birdies = [
